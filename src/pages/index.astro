@@ -12,55 +12,96 @@
 <body class="bg-gray-200 min-h-screen p-8">
     <div class="py-8">
 
-        <h1 class="text-3xl mb-10 font-extrabold tracking-tight text-gray-900">
+        <h1 class="text-2xl mb-10 font-extrabold tracking-tight text-gray-900">
             Talk about how you made your site and why you chose the tools you did. Briefly explain one challenge you experienced in setting up this site and how you overcame it.
         </h1>
 
         <p class="mb-8">
-        I am a big fan of <a href="https://flaviocopes.com/" class="text-lime-800 hover:underline">Flavio Copes</a> so following his projects in the past, I have experience using <a href="https://astro.build/" class="text-lime-800 hover:underline">Astro</a> and <a href="https://tailwindcss.com/" class="text-lime-800 hover:underline">Tailwind CSS</a>.
+            I am a big fan of <a href="https://flaviocopes.com/" class="text-lime-800 hover:underline">Flavio Copes</a> so following his projects in the past, I have experience using <a href="https://astro.build/" class="text-lime-800 hover:underline">Astro</a> and <a href="https://tailwindcss.com/" class="text-lime-800 hover:underline">Tailwind CSS</a>. So for this exercise I decided to use an empty Astro project with simple styling and Tailwind CSS and make a super simple webpage with the requested answers. I would have loved to get more in-depth with the project but am cut short for time.
         </p>
+        <p class="mb-8">
+            The biggest challenge I faced was spinning up a new GitHub instance as my local machine had some misconfigured git config files so I resorted to using GitHub Desktop to get this repository configured and authenticated. 
+        </p>
+       
 
-        <h1 class="text-3xl mb-10 font-extrabold tracking-tight text-gray-900">
-            Question 2
+        <h1 class="text-2xl mb-10 font-extrabold tracking-tight text-gray-900">
+            What did you think of our service during the time you used it? Provide some constructive criticism or some features that impressed you.
         </h1>
 
         <p class="mb-8">
-            This is going to be the placeholder for question 2.
+            I have used Netlify in the past for some projects and it is really simple to use. Admittedly I do not believe I have scratched the surface of all of the capabilities Netlify offers but the GitHub integration has worked seamlessly for me. I would say a feature that I have not used but has impressed me is the drag and drop deploy functionality. Netlify has a rich integration suite as well that seems like it would be exciting to support!
         </p>
 
-        <h1 class="text-3xl mb-10 font-extrabold tracking-tight text-gray-900">
-            Question 3
+        <h1 class="text-2xl mb-10 font-extrabold tracking-tight text-gray-900">
+            Rank your 5 favorite and 5 least favorite activities from this <a href="https://gist.github.com/laurajodz/592402a6336410377dee1a744af846ab" class="text-lime-800 hover:underline">list</a>.
         </h1>
 
 		<p class="mb-8">
-            This is going to be the placeholder for question 3.
+            As a disclaimer I am splitting hairs here as I am not against any of the activities as they are all vital in a well run support organization. My intent was to emphasize things I really enjoy (technical troubleshooting, learning new tools/technologies, helping others). I do not feel strongly against what I selected as my least favorite activies but for the sake of the exercise those came to mind.
         </p>
 
-        <h1 class="text-3xl mb-10 font-extrabold tracking-tight text-gray-900">
-            Question 4
+        <h1 class="text-xl mb-10 font-extrabold tracking-tight text-gray-900">
+            Favorite
+          </h1>
+
+        <ol class=" mb-8 list-decimal pl-8">
+            <li class="mb-2">Debug a customer's build using a programming language and framework that you've never seen before</li>
+            <li class="mb-2">Set up your own copy of several site frameworks for debugging</li>
+            <li class="mb-2">Help train and onboard new support teammates</li>
+            <li class="mb-2">Work with a customer to figure out if Netlify's service can solve a particular workflow or integration challenge they have</li>
+            <li class="mb-2">Dig through server logs to troubleshoot a customer's website behavior</li>
+          </ol>
+
+          <h1 class="text-xl mb-10 font-extrabold tracking-tight text-gray-900">
+            Least Favorite
+          </h1>
+
+        <ol class=" mb-8 list-decimal pl-8">
+            <li class="mb-2">Manage a Support team</li>
+            <li class="mb-2">Engage multiple users at once via chat to answer their questions and troubleshoot problems</li>
+            <li class="mb-2">Respond to Netlify customers on Twitter</li>
+            <li class="mb-2">Work with prospective customers to explain our service and the pricing model</li>
+            <li class="mb-2">Suggest and champion improvements to the Support team's workflow</li>
+          </ol>
+
+        <h1 class="text-2xl mb-10 font-extrabold tracking-tight text-gray-900">
+            Provide a link to documentation for a technical/developer-focused product, which you think are well done, and explain why you think they are well done.
         </h1>
 
 		<p class="mb-8">
-            This is going to be the placeholder for question 4.
+            Admittedly this is coming from an extreme place of bias as I have had a major hand in this but my answer would be <a href="https://docs.ipdata.co" class="text-lime-800 hover:underline">Ipdata's Developer Documentation</a>. Our aim was to make the documentation easy to understand, clean visually, with a lot of relevant examples for somone getting started with the Ipdata API.
         </p>
 
-        <h1 class="text-3xl mb-10 font-extrabold tracking-tight text-gray-900">
-            Question 5
+        <h1 class="text-2xl mb-10 font-extrabold tracking-tight text-gray-900">
+            Explain, in a couple of paragraphs, what you think are two major challenges around DNS configuration for less-technical customers hosting websites.
         </h1>
 
 		<p class="mb-8">
-            This is going to be the placeholder for question 5.
+            The first issue for a less-technical customer working with DNS configuration in website hosting is that DNS configuration is highly technical with a lot nuances. It is not something I would consider beginner friendly. Take for example the following configuration requirements from <a href="https://www.hivelocity.net/kb/dns-configuration-everything-you-need-to-know/" class="text-lime-800 hover:underline">Hivelocity</a>. 
+            There is a lot of DNS related terminology (TLD, A-Records, CNAME-Records etc.) and associated configurations that will cause a website to break if not configured correctly. Additonally, hosting providers vary and DNS configurations from a UI standpoint may or may not be as user friendly. In the case of Netlify there are additional <a href="https://docs.netlify.com/domains-https/custom-domains/configure-external-dns/" class="text-lime-800 hover:underline">configuration steps</a> that must be done if your domain is externally registered.
         </p>
 
-        <h1 class="text-3xl mb-10 font-extrabold tracking-tight text-gray-900">
-            Question 6
+        <p class="mb-8">
+            The second issue here is that DNS propagation takes time up to 72 hours and this can lead to customers thinking their setup is not correct when the issue at hand is just propagation time. I have seen examples of support tickets create for this style of issue quite often for differing platforms.
+        </p>
+
+        <h1 class="text-2xl mb-10 font-extrabold tracking-tight text-gray-900">
+            A customer writes in to Support saying simply that their “site won’t build”. You have access to their build logs, and there you see this error: Build failed due to a user error: Build script returned non-zero exit code: 2. You have no more information than this and the site’s source repository is private so you cannot test the build yourself. How would you troubleshoot this issue? What steps would you take? Also, please compose your best customer-facing first response.
         </h1>
+
+        <h6 class="text-xl mb-10 font-extrabold tracking-tight text-gray-900">Initial thoughts</h6>
+
+		<p class="mb-8">
+            For this particular issue given the circumstances we are going to have to probe the user for more information. We can lead in with sharing our findings in the build logs but we will need to request additonal information
+        </p>
+
+        <h6 class="text-xl mb-10 font-extrabold tracking-tight text-gray-900">Proposed Support Response</h6>
 
 		<p class="mb-8">
             This is going to be the placeholder for question 6.
         </p>
 
-        <h1 class="text-3xl mb-10 font-extrabold tracking-tight text-gray-900">
+        <h1 class="text-2xl mb-10 font-extrabold tracking-tight text-gray-900">
             Question 7
         </h1>
 
@@ -68,7 +109,7 @@
             This is going to be the placeholder for question 7.
         </p>
 
-        <h1 class="text-3xl mb-10 font-extrabold tracking-tight text-gray-900">
+        <h1 class="text-2xl mb-10 font-extrabold tracking-tight text-gray-900">
             Question 8
         </h1>
 
@@ -76,7 +117,7 @@
             This is going to be the placeholder for question 8.
         </p>
 
-        <h1 class="text-3xl mb-10 font-extrabold tracking-tight text-gray-900">
+        <h1 class="text-2xl mb-10 font-extrabold tracking-tight text-gray-900">
             Question 9
         </h1>
 
