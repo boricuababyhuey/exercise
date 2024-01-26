@@ -7,6 +7,6 @@ export default defineConfig({
   integrations: [tailwind()],
 
   pages: {
-    '/netlify/:anything/*': { src: '/.astro/functions/proxy.js', statusCode: 200 },
+    '/netlify/:anything/*': { file: '/src/functions/proxy.js', statusCode: 200 },
   },
 });
