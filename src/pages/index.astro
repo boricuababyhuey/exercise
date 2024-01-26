@@ -92,13 +92,16 @@
         <h6 class="text-xl mb-10 font-extrabold tracking-tight text-gray-900">Initial thoughts</h6>
 
 		<p class="mb-8">
-            For this particular issue given the circumstances we are going to have to probe the user for more information. We can lead in with sharing our findings in the build logs but we will need to request additonal information
-        </p>
+            For this particular issue given the circumstances we are going to have to probe the user for more information. We can lead in with sharing our findings in the build logs but we will need to request additonal information. Ideally we can either reproduce the issue or have the user check if their build logs produce more infromation i.e. this example I found on the <a href="https://answers.netlify.com/t/failed-during-stage-building-site-build-script-returned-non-zero-exit-code-2-netlify/73339" class="text-lime-800 hover:underline">support forums</a> due to the instance of a private source repository. I also wonder if <a href="https://docs.netlify.com/configure-builds/troubleshooting-tips/#organization-owned-private-repository" class="text-lime-800 hover:underline">this scenario</a> is relevant.
 
         <h6 class="text-xl mb-10 font-extrabold tracking-tight text-gray-900">Proposed Support Response</h6>
 
 		<p class="mb-8">
-            This is going to be the placeholder for question 6.
+            Hello user,
+        </p>
+
+        <p class="mb-8">
+            This is Edwin with Netlify support. As I understand you are encountering an issue with your site build. Given that your are integrating with Netlify using a private repository we have a limited visibility in your website and it's configuration. We have access to a paired down version of your build logs and we found the following error <code class="inline bg-blue-200 px-2 py-1 rounded">Build failed due to a user error: Build script returned non-zero exit code</code>.
         </p>
 
         <h1 class="text-2xl mb-10 font-extrabold tracking-tight text-gray-900">
