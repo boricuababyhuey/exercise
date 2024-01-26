@@ -101,7 +101,7 @@
         </p>
 
         <p class="mb-8">
-            This is Edwin with Netlify support. As I understand you are encountering an issue with your site build. Given that your are integrating with Netlify using a private repository we have a limited visibility in your website and it's configuration. We have access to a paired down version of your build logs and we found the following error <code class="inline bg-blue-200 px-2 py-1 rounded">Build failed due to a user error: Build script returned non-zero exit code</code>.
+            This is Edwin with Netlify support. As I understand you are encountering an issue with your site build. Given that your are integrating with Netlify using a private repository we have a limited visibility in your website and it's configuration. We have access to a paired down version of your build logs and we found the following error <code>Build failed due to a user error: Build script returned non-zero exit code</code>.
         </p>
 
         <p class="mb-8">
@@ -113,11 +113,21 @@
         </p>
 
         <h1 class="text-2xl mb-10 font-extrabold tracking-tight text-gray-900">
-            Question 7
+            How would you set up an http 301 status redirect from “/netlify/anything” on your site, to https://www.google.com/search?q=anything. Please provide the redirect formatting here. Now, how about a proxy redirect? Please add that proxy redirect rule directly to your site.
         </h1>
 
 		<p class="mb-8">
-            This is going to be the placeholder for question 7.
+            Based on the following <a href="https://docs.netlify.com/routing/redirects/" class="text-lime-800 hover:underline">guide</a> there are a few ways to accomplish this. One would be to create a <code>_redirects</code> file in your root folder. An example of how this would look is.
+        </p>
+        <p class="mb-8">
+        <code>
+            /netlify/anything https://www.google.com/search?q=:anything 301
+        </code>
+        </p>
+
+        <p>
+            
+            Since I am using Astro I created a proxy.js file with the following  
         </p>
 
         <h1 class="text-2xl mb-10 font-extrabold tracking-tight text-gray-900">
